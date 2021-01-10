@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Playfair+Display:wght@400;700&family=Poppins&display=swap');
+:root {
+    scroll-behavior: smooth;
+}
+body {
+background: linear-gradient(0deg, #ffffff 0%, #f8f8f8 100%);
+}
 .header_logo {
     font-family: Abel, sans-serif;
     font-size: 32px;
     line-height: 46px;
     color: #313053;
-    text-align: left;
 }
 .menu {
+    /* display: flex; */
     font-family: Poppins, sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -75,7 +81,7 @@ p.text {
     line-height: 26px;
     color: #817e8f;
 }
-.form_button {
+[type='submit'] {
     font-family: Poppins, sans-serif;
     font-weight: 400;
     font-size:16px;
@@ -83,11 +89,63 @@ p.text {
     color: black;
     text-align: center;
 }
-.form_input {
+[type='text'] {
     font-family: Poppins, sans-serif;
     font-weight: 400;
     font-size:16px;
     line-height: 22px;
     color: #817e8f;
-    text-align: left;
+}
+button {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size:16px;
+    line-height: 22px;
+    color: black;
+    text-align: center;
+}
+#why_us {
+    background-image: url(../img/why_us_background_img.png);
+}
+#bloomy_solutions {
+    background-image: url(../img/bloomy_solution_background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+body {
+background: linear-gradient(0deg, #ffffff 0%, #f8f8f8 100%);
+}
+.compositions {
+    background-image: url(../img/compositions_background.png);
+    background-repeat: no-repeat;
+    /* min-width: 1921px;
+    background-size: 66.56% 0%; */
+}
+.write_us {
+ background-image: url(../img/send_flovers_bg.png);
+}
+.services {
+    background-image: url(../img/additional_services_bg.png);
+}
+.want_to_order {
+    background-image: url(../img/why_us_background_img.png);
+}
+.contact_icon {
+    height: 30px;
+    width: 30px;
+}
+.why_us_img {
+    height: 570px;
+    width: 593px;
+    object-fit: cover;
+}
+.seasonal_composition {
+    height: 449px;
+    width: 354px;
+    object-fit: cover;
+}
+.media_overlay {
+    height: 370px;
+    width: 330px;
+    object-fit: cover;
 }
