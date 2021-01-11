@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Playfair+Display:wght@400;700&family=Poppins&display=swap'); 
-
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Playfair+Display:wght@400;700&family=Poppins&display=swap'); :root {
     scroll-behavior: smooth;
 }
 
@@ -30,8 +28,7 @@ body {
     color: #313053;
 }
 
-h1,
-.block_title {
+h1, .block_title {
     font-family: Playfair Display, serif;
     font-weight: 700;
     font-size: 42px;
@@ -84,8 +81,7 @@ p.text {
     color: #817e8f;
 }
 
-button,
-[type='submit'] {
+button, [type='submit'] {
     font-family: Poppins, sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -158,10 +154,8 @@ body {
     object-fit: cover;
 }
 
-.slider_1,
-.slider_2,
-.slider_3 {
+.slider_1, .slider_2, .slider_3 {
     height: 555px;
     width: 1040px;
-    object-fit: cover; 
+    object-fit: cover;
 }
