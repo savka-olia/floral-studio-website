@@ -1,39 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Playfair+Display:wght@400;700&family=Poppins&display=swap'); :root {
     scroll-behavior: smooth;
-}
+    --main-color: #313053; }
 
 body {
     background: linear-gradient(0deg, #ffffff 0%, #f8f8f8 100%);
+    max-width: 980px;
+    margin: auto;
+}
+
+header .menu {
+    flex-direction: column;
+}
+
+@media (min-width: 610px) {
+    header nav {
+        display: flex;
+    }
+
+    header .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-right: -10px;
+        margin-left: -10px;
+        margin-top: -5px;
+        padding-top: 30px;
+        padding-bottom: 120px;
+        width: 100%;
+    }
+}
+
+header .menu a {
+    text-decoration: none;
+    padding: 7px;
+}
+
+header .menu a:hover {
+    color: #ffa5c0;
 }
 
 .header_logo {
     font-family: Abel, sans-serif;
     font-size: 32px;
     line-height: 46px;
-    color: #313053;
+    color: var(--main-color);
+    padding-top: 30px;
+    padding-bottom: 120px;
 }
 
 .menu {
     font-family: Poppins, sans-serif;
     font-weight: 400;
+    color: var(--main-color);
     font-size: 16px;
-    color: #313053;
+    color: var(--main-color);
     text-align: center;
 }
 
-.header_button {
+/* .header_button {
     font-family: Poppins, sans-serif;
     font-weight: 400;
-    font-size: 14px;
-    color: #313053;
-}
-
+    font-size: 16px;
+    color: var(--main-color);
+} */
 h1, .block_title {
     font-family: Playfair Display, serif;
     font-weight: 700;
     font-size: 42px;
     line-height: 46px;
-    color: #313053;
+    color: var(--main-color);
     text-align: center;
 }
 
@@ -42,7 +79,7 @@ h3 {
     font-weight: 400;
     font-size: 28px;
     line-height: 34px;
-    color: #313053;
+    color: var(--main-color);
     text-align: center;
 }
 
@@ -51,7 +88,7 @@ p.price {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    color: #313053;
+    color: var(--main-color);
     text-align: center;
 }
 
@@ -60,7 +97,7 @@ p.subtitle {
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
-    color: #313053;
+    color: var(--main-color);
     text-align: center;
 }
 
@@ -69,7 +106,7 @@ p.contact_info {
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
-    color: #313053;
+    color: var(--main-color);
     text-align: center;
 }
 
@@ -81,54 +118,12 @@ p.text {
     color: #817e8f;
 }
 
-button, [type='submit'] {
-    font-family: Poppins, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: black;
-    text-align: center;
-}
-
 [type='text'] {
     font-family: Poppins, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     color: #817e8f;
-}
-
-#why_us {
-    background-image: url(../img/why_us_background_img.png);
-}
-
-#bloomy_solutions {
-    background-image: url(../img/bloomy_solution_background.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-body {
-    background: linear-gradient(0deg, #ffffff 0%, #f8f8f8 100%);
-}
-
-.compositions {
-    background-image: url(../img/compositions_background.png);
-    background-repeat: no-repeat;
-    /* min-width: 1921px;
-    background-size: 66.56% 0%; */
-}
-
-.write_us {
-    background-image: url(../img/send_flovers_bg.png);
-}
-
-.services {
-    background-image: url(../img/additional_services_bg.png);
-}
-
-.want_to_order {
-    background-image: url(../img/why_us_background_img.png);
 }
 
 .contact_icon {
@@ -159,3 +154,54 @@ body {
     width: 1040px;
     object-fit: cover;
 }
+
+/* backgrounds */
+#bloomy_solutions {
+    background-image: url(../img/bloomy_solution_background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#why_us {
+    background-image: url(../img/why_us_background_img.png);
+}
+
+.compositions {
+    background-image: url(../img/compositions_background.png);
+    background-repeat: no-repeat;
+    /* min-width: 1921px;
+    background-size: 66.56% 0%; */
+}
+
+.write_us {
+    background-image: url(../img/send_flovers_bg.png);
+}
+
+.services {
+    background-image: url(../img/additional_services_bg.png);
+}
+
+#order {
+    background-image: url(../img/why_us_background_img.png);
+}
+
+/* Buttons */
+button, [type='submit'], .header_button {
+    background-color: #ffa5c0;
+    border: none;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form design */
