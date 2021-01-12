@@ -82,7 +82,43 @@ h3 {
     color: var(--main-color);
     text-align: center;
 }
+@media (min-width: 768px) {
+    #bloomy_solutions {
+            padding-top: 75px;
+    padding-bottom: 60px;
+    }
+}
 
+/* .icon {
+    background-color: transparent;
+    position: absolute;
+} */
+.what_we_create {
+grid-gap: 4vw;
+  text-align: center;
+  justify-content: center;
+}
+
+@media (min-width: 660px) {
+    .what_we_create {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 30px;
+    }
+}
+
+@media (min-width: 800px) {
+    .what_we_create {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 30px;
+    }
+}
+
+.about_us {
+    display: flex;
+ margin-top: 0;
+    margin-left: 12px;
+}
 p.price {
     font-family: Poppins, sans-serif;
     font-weight: 400;
@@ -148,6 +184,21 @@ p.text {
     width: 330px;
     object-fit: cover;
 }
+
+.media_overlay:hover {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 
 .slider_1, .slider_2, .slider_3 {
     height: 555px;
