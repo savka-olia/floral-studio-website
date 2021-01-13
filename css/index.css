@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Playfair+Display:wght@400;700&family=Poppins&display=swap'); :root {
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Playfair+Display:wght@400;700&family=Poppins&display=swap'); 
+
+:root {
     scroll-behavior: smooth;
     --main-color: #313053; }
 
@@ -35,6 +37,7 @@ header .menu {
 header .menu a {
     text-decoration: none;
     padding: 7px;
+    color: var(--main-color);
 }
 
 header .menu a:hover {
@@ -45,9 +48,6 @@ header .menu a:hover {
     font-family: Abel, sans-serif;
     font-size: 32px;
     line-height: 46px;
-    color: var(--main-color);
-    padding-top: 30px;
-    padding-bottom: 120px;
 }
 
 .menu {
@@ -59,12 +59,6 @@ header .menu a:hover {
     text-align: center;
 }
 
-/* .header_button {
-    font-family: Poppins, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--main-color);
-} */
 h1, .block_title {
     font-family: Playfair Display, serif;
     font-weight: 700;
@@ -82,21 +76,18 @@ h3 {
     color: var(--main-color);
     text-align: center;
 }
+
 @media (min-width: 768px) {
     #bloomy_solutions {
-            padding-top: 75px;
-    padding-bottom: 60px;
+        padding-top: 75px;
+        padding-bottom: 60px;
     }
 }
 
-/* .icon {
-    background-color: transparent;
-    position: absolute;
-} */
 .what_we_create {
-grid-gap: 4vw;
-  text-align: center;
-  justify-content: center;
+    grid-gap: 4vw;
+    text-align: center;
+    justify-content: center;
 }
 
 @media (min-width: 660px) {
@@ -114,11 +105,40 @@ grid-gap: 4vw;
     }
 }
 
-.about_us {
-    display: flex;
- margin-top: 0;
-    margin-left: 12px;
+#about_us {
+    padding-top: 50px;
+    padding-bottom: 75px;
 }
+
+.about_us {
+    grid-gap: 2vw;
+    justify-content: space-between;
+}
+
+@media (min-width: 660px) {
+    .about_us {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 30px;
+    }
+}
+
+@media (min-width: 660px) {
+    .product_list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3vw;
+    }
+}
+
+@media (min-width: 800px) {
+    .product_list {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 3vw;
+        margin-top: 30px;
+    }
+}
+
 p.price {
     font-family: Poppins, sans-serif;
     font-weight: 400;
@@ -186,19 +206,20 @@ p.text {
 }
 
 .media_overlay:hover {
-	opacity: 1;
-	-webkit-animation: flash 1.5s;
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
     animation: flash 1.5s;
 }
-@keyframes flash {
-	0% {
-		opacity: .4;
-	}
-	100% {
-		opacity: 1;
-	}
-}
 
+@keyframes flash {
+    0% {
+        opacity: .4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 .slider_1, .slider_2, .slider_3 {
     height: 555px;
@@ -206,22 +227,21 @@ p.text {
     object-fit: cover;
 }
 
-/* backgrounds */
 #bloomy_solutions {
-    background-image: url(../img/bloomy_solution_background.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: url(../img/bloomy_solution_background.png) no-repeat;
+    max-width: 980px;
 }
 
 #why_us {
-    background-image: url(../img/why_us_background_img.png);
+    background: url(../img/why_us_background_img.png) no-repeat;
 }
 
-.compositions {
+#compositions {
     background-image: url(../img/compositions_background.png);
     background-repeat: no-repeat;
-    /* min-width: 1921px;
-    background-size: 66.56% 0%; */
+    padding-top: 75px;
+    padding-bottom: 75px;
+    max-width: 980px;
 }
 
 .write_us {
@@ -236,7 +256,6 @@ p.text {
     background-image: url(../img/why_us_background_img.png);
 }
 
-/* Buttons */
 button, [type='submit'], .header_button {
     background-color: #ffa5c0;
     border: none;
@@ -244,7 +263,7 @@ button, [type='submit'], .header_button {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    color: white;
+    color: white !important;
     padding: 16px 32px;
     text-align: center;
     margin: 4px 2px;
@@ -254,5 +273,3 @@ button, [type='submit'], .header_button {
     text-decoration: none;
     cursor: pointer;
 }
-
-/* Form design */
