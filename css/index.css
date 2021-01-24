@@ -6,6 +6,9 @@
 
 body {
     background: linear-gradient(0deg, #ffffff 0%, #f8f8f8 100%);
+    margin: auto;
+}
+main {
     max-width: 980px;
     margin: auto;
 }
@@ -44,13 +47,18 @@ header .menu a:hover {
 
 .header_logo {
     font-family: Abel, sans-serif;
-    font-size: 30px;
+    font-size: 23px;
     line-height: 46px;
     text-align: end;
     padding-top: 10px;
     padding-right: 50px;
 }
-
+.header_logo h3 {
+    font-family: Abel, sans-serif;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: end;
+}
 .menu {
     font-family: Poppins, sans-serif;
     font-weight: 400;
@@ -266,14 +274,20 @@ p.text {
 }
 
 .seasonal_composition {
-    height: 449px;
-    width: 354px;
+    max-height: 449px;
+    max-width: 354px;
+    width: 100%;
     object-fit: cover;
 }
 
+.art-flower-pic {
+    width: 100%; 
+    max-width: 260px; 
+    min-height: 515px;
+}
+
 .media_overlay {
-    height: 370px;
-    width: 330px;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -321,6 +335,7 @@ p.text {
 #order {
     background-image: url(../img/why_us_background_img.png);
 } */
+
 button {
     display: inline-block;
     background-color: transparent;
@@ -336,10 +351,10 @@ button {
     align-items: center;
     transition: all 0.2s;
     width: 100%;
-    height: 100%;
+    height: 46px;
     max-width: 169px;
     max-height: 46px;
-    position: absolute;
+
 }
 
 button:hover {
@@ -369,4 +384,10 @@ button:hover {
 
 [type='submit'], .header_button:hover {
     background-color: rgb(241, 129, 163);
+}
+
+.short-line {
+    height: 2px;
+    width: 75px;
+    color: rgb(255, 165, 192);
 }
