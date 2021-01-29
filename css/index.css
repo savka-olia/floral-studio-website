@@ -64,8 +64,16 @@ header .menu a:hover {
     font-weight: 400;
     color: var(--main-color);
     font-size: 16px;
-    color: var(--main-color);
     text-align: center;
+}
+
+
+/* burger font styling */
+.text-body {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #313053 !important;
+    font-size: 16px;
 }
 
 h1, .block_title {

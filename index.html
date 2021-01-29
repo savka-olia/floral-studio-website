@@ -37,7 +37,7 @@
             </nav>
             <!-- mobile size -->
             <!-- burger button -->
-            <nav class="d-block d-lg-none navbar navbar-dark bg-dark">
+            <nav class="d-block d-lg-none navbar navbar-light bg-transparent">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -45,10 +45,23 @@
                 </div>
             </nav>
             <!-- navbar -->
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                    <h5 class="text-white h4">Collapsed content</h5>
-                    <span class="text-muted">Toggleable via the navbar brand.</span>
+            <div class="d-block d-lg-none collapse" id="navbarToggleExternalContent">
+                <div class="d-flex flex-column bg-transparent ms-2 p-2">
+                    <a class="text-body text-decoration-none mx-2" href="#about_us">About Us</a>
+                    <a class="text-body text-decoration-none mx-2" href="#bloomy_solutions">Bloomy Solutions</a>
+                    <a class="text-body text-decoration-none mx-2" href="#why_us">Why Us</a>
+                    <a class="text-body text-decoration-none mx-2" href="#compositions">Compositions</a>
+                    <a class="text-body text-decoration-none mx-2" href="#contacts">Contacts</a>
+                    <span class="text-muted"></span>
+                </div>
+                <div class="d-flex flex-row ms-2">
+                    <a href="#order" class="header_button">Request a quote</a>
+                    <a class="p-1 mx-2" href="https://www.facebook.com/oksana.savka.58">
+                        <img class="contact_icon" src="img/facebook-logo.svg" alt="Facebook">
+                    </a>
+                    <a class="p-1" href="https://www.instagram.com/">
+                        <img class="contact_icon" src="img/instagram.svg" alt="Instagram">
+                    </a>
                 </div>
             </div>
         </header>
@@ -115,7 +128,7 @@
                 <button>Place an order</button>
             </div>
             <div class="wrapping-tutor">
-                <h1>Custom Video Player</h1>
+                <h1>DIY Floral Wedding Arch</h1>
                 <video src="videos/DIY Floral Wedding Arch.mp4" id="video" class="screen w-100" poster="img/poster.png"></video>
                 <div class="controls w-100">
                     <button class="btn" id="play">
