@@ -394,8 +394,64 @@ button:hover {
     background-color: rgb(241, 129, 163);
 }
 
+[type='submit'], .header_button, button:focus {
+    border-color: #ff6995;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(255, 105, 149 / 25%);
+}
+
 .short-line {
     height: 2px;
     width: 75px;
     color: rgb(255, 165, 192);
 }
+
+/* form control */
+.form-holder {
+  padding-left: 20px;
+  position: relative; }
+  .form-holder:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #ff9a9c;
+    position: absolute;
+    left: 1px;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+    .form-holder.active:before {
+    border: 2px solid transparent;
+    background: #ff9a9c;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  border-radius: 23.5px;
+  height: 47px;
+  padding: 0 24px;
+    color: #817e8f;
+  font-size: 13px;
+  border: none;
+  background: #f7f7f7;
+  margin-bottom: 20px; }
+  .form-control::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #817e8f; }
+  .form-control::-moz-placeholder {
+    font-size: 16px;
+    color: #817e8f; }
+  .form-control:-ms-input-placeholder {
+    font-size: 16px;
+    color: #817e8f;
+ }
+  .form-control:-moz-placeholder {
+    font-size: 16px;
+    color: #817e8f;
+ }

@@ -127,7 +127,7 @@
                     </p>
                     </article>
                 </div>
-                <button>Place an order</button>
+                <button class="text-center">Place an order</button>
             </div>
             <div class="wrapping-tutor">
                 <h1>DIY Floral Wedding Arch</h1>
@@ -155,10 +155,7 @@
                     feel. We provide a modern approach to everyday flower design.
                     <br>We offer handcrafted bouquets, flower jars, venue dressing, corporate gifts, etc. Our florists
                     are
-                    always happy to implement any of your ideas and create new, fresh compositions.
-                    
-                    
-                    
+                    always happy to implement any of your ideas and create new, fresh compositions.  
                     </p>
                 </article>
             </div>
@@ -330,23 +327,31 @@
                     </article>
                 </div>
             </div>
-            <div id="order">
+            <div class="row mx-3 mx-md-0">
+                <div id="order" class="col-12 col-md-6">
                 <form method="POST" name="order" class="order_form">
                     <h2 class="block_title">Want to order flowers?
                 </h2>
                     <p class="subtitle">Complete the form below, and we will contact you to bring together the perfect
                     composition!
                 </p>
-                    <img src="img/vase.png" alt="Vase">
-                    <br>
-                    <input type="text" placeholder="Name" required>
-                    <br>
-                    <input type="text" placeholder="Phone Number" required>
-                    <br>
-                    <input type="text" placeholder="E-mail" required>
-                    <br>
+                <div class="form-holder active">
+					<input type="text" placeholder="Name" class="form-control">
+                </div>
+                <div class="form-holder">
+					<input type="text" placeholder="Phone Number" class="form-control">
+                </div>
+                <div class="form-holder">
+					<input type="text" placeholder="E-mail" class="form-control">
+				</div>
+                <div>
                     <input type="submit" value="Send">
+                </div>
                 </form>
+                </div>
+                <div class="col-6">
+            <img src="img/vase.png" alt="Vase">
+                </div>
             </div>
         </main>
         <footer>
@@ -366,6 +371,8 @@
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/main.js"></script>
         <script src="js/index.js" type="module"></script>
     </body>
 </html>
