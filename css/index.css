@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Playfair+Display:wght@400;700&family=Poppins&display=swap'); 
-
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Playfair+Display:wght@400;700&family=Poppins&display=swap'); :root {
     scroll-behavior: smooth;
     --main-color: #313053; }
 
@@ -8,6 +6,7 @@ body {
     background: linear-gradient(0deg, #ffffff 0%, #f8f8f8 100%);
     margin: auto;
 }
+
 main {
     max-width: 980px;
     margin: auto;
@@ -53,12 +52,14 @@ header .menu a:hover {
     padding-top: 10px;
     padding-right: 50px;
 }
+
 .header_logo h3 {
     font-family: Abel, sans-serif;
     font-size: 32px;
     line-height: 46px;
     text-align: end;
 }
+
 .menu {
     font-family: Poppins, sans-serif;
     font-weight: 400;
@@ -66,7 +67,6 @@ header .menu a:hover {
     font-size: 16px;
     text-align: center;
 }
-
 
 /* burger font styling */
 .text-body {
@@ -105,7 +105,7 @@ h3 {
 @media (min-width: 768px) {
     #bloomy_solutions {
         padding-top: 75px;
-        padding-bottom: 60px;
+        padding-bottom: 75px;
     }
 }
 
@@ -131,13 +131,14 @@ h3 {
 }
 
 #about_us {
-    padding-top: 50px;
+    padding-top: 75px;
     padding-bottom: 75px;
 }
 
 .about_us {
     grid-gap: 2vw;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 @media (min-width: 660px) {
@@ -146,13 +147,6 @@ h3 {
         grid-template-columns: 1fr 1fr;
         padding-top: 30px;
     }
-}
-
-#why_us {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .selected_flowers {
@@ -204,6 +198,10 @@ h3 {
         grid-template-columns: 1fr 1fr;
         grid-gap: 3vw;
     }
+}
+
+#compositions {
+    padding-top: 75px;
 }
 
 @media (min-width: 800px) {
@@ -289,8 +287,8 @@ p.text {
 }
 
 .art-flower-pic {
-    width: 100%; 
-    max-width: 260px; 
+    width: 100%;
+    max-width: 260px;
     min-height: 515px;
 }
 
@@ -315,37 +313,59 @@ p.text {
     }
 }
 
-/* #bloomy_solutions {
-    background: url(../img/bloomy_solution_background.png) no-repeat;
-    max-width: 980px;
+.services {
+    padding-top: 75px;
+}
+
+.order_form {
+    margin-top: 20%;
+}
+
+#order {
+    padding-top: 75px;
+    background-color: #ffffff;
+}
+
+.contact_form {
+    padding-top: 75px;
+    background-image: url(../img/why_us_background_img.png);
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+    /* Современные браузеры */
+}
+
+.input_img {
+    padding-top: 75px;
 }
 
 #why_us {
     background: url(../img/why_us_background_img.png) no-repeat;
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+    /* Современные браузеры */
 }
 
-#compositions {
-    background-image: url(../img/compositions_background.png);
-    background-repeat: no-repeat;
+#contacts {
     padding-top: 75px;
-    padding-bottom: 75px;
-    max-width: 980px;
 }
 
-.write_us {
-    background-image: url(../img/send_flovers_bg.png);
+footer {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0.4433123591233369) 43%, rgba(255,182,224,0.21081936192445727) 100%);
 }
-
-.services {
-    background-image: url(../img/additional_services_bg.png);
-}
-
-#order {
-    background-image: url(../img/why_us_background_img.png);
-} */
 
 button {
-    display: inline-block;
+    /* display: inline-block; */
     background-color: transparent;
     border: 2px solid rgb(255, 165, 192);
     border-radius: 7px 25px 25px 25px;
@@ -356,13 +376,12 @@ button {
     font-size: 16px;
     line-height: 22px;
     color: black;
-    align-items: center;
+    /* align-items: center; */
     transition: all 0.2s;
     width: 100%;
     height: 46px;
     max-width: 169px;
     max-height: 46px;
-
 }
 
 button:hover {
@@ -370,8 +389,8 @@ button:hover {
     color: white;
 }
 
-[type='submit'], .header_button {
-    display: inline-block;
+[type='submit'], .header_button, .send_button {
+    /* display: inline-block; */
     border-radius: 7px 25px 25px 25px;
     box-sizing: border-box;
     text-decoration: none;
@@ -382,7 +401,6 @@ button:hover {
     background-color: rgb(255, 165, 192);
     color: white !important;
     padding: 10px;
-    text-align: center;
     transition: all 0.2s;
     width: 100%;
     height: 100%;
@@ -408,9 +426,11 @@ button:hover {
 
 /* form control */
 .form-holder {
-  padding-left: 20px;
-  position: relative; }
-  .form-holder:before {
+    padding-left: 20px;
+    position: relative;
+}
+
+.form-holder:before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -422,36 +442,50 @@ button:hover {
     position: absolute;
     left: 1px;
     top: 50%;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
 }
 
-    .form-holder.active:before {
+.form-holder.active:before {
     border: 2px solid transparent;
     background: #ff9a9c;
 }
 
 .form-control {
-  display: block;
-  width: 100%;
-  border-radius: 23.5px;
-  height: 47px;
-  padding: 0 24px;
+    display: block;
+    width: 100%;
+    border-radius: 23.5px;
+    height: 47px;
+    padding: 0 24px;
     color: #817e8f;
-  font-size: 13px;
-  border: none;
-  background: #f7f7f7;
-  margin-bottom: 20px; }
-  .form-control::-webkit-input-placeholder {
-    font-size: 16px;
-    color: #817e8f; }
-  .form-control::-moz-placeholder {
-    font-size: 16px;
-    color: #817e8f; }
-  .form-control:-ms-input-placeholder {
+    font-size: 13px;
+    border: none;
+    background: #f7f7f7;
+    margin-bottom: 20px;
+}
+
+.form-control::-webkit-input-placeholder {
     font-size: 16px;
     color: #817e8f;
- }
-  .form-control:-moz-placeholder {
+}
+
+.form-control::-moz-placeholder {
     font-size: 16px;
     color: #817e8f;
- }
+}
+
+.form-control:-ms-input-placeholder {
+    font-size: 16px;
+    color: #817e8f;
+}
+
+.form-control:-moz-placeholder {
+    font-size: 16px;
+    color: #817e8f;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    object-position: 50% 50%;
+    object-fit: contain;
+}
